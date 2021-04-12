@@ -1,0 +1,62 @@
+@import './base-styles.scss';
+
+.pagination {
+	margin-bottom: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	position: relative;
+	padding-right: 77px;
+
+	@media (max-width: $large) {
+		justify-content: space-between;
+	}
+
+	@media (max-width: $medium) {
+		flex-direction: column;
+	}
+
+	@media (max-width: $small) {
+		align-items: center;
+	}
+
+	&__list {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		@media (max-width: $large) {
+			position: relative;
+			left: 0%;
+			transform: none;
+		}
+
+		@media (max-width: $medium) {
+			order: 1;
+			margin-top: 24px;
+		}
+	}
+
+	&__btn {
+		border: none;
+		background-color: transparent;
+		padding-top: 1.5px;
+    line-height: 2;
+	}
+
+	&__btn:hover {
+		background-color: $gris;
+	}
+
+	.active {
+		color: white;
+		background-color: $azul;
+	}
+
+	&.nes-container {
+		padding: 1.5rem;
+	}
+}

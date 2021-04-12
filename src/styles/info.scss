@@ -1,0 +1,59 @@
+.info {
+	width: -webkit-fill-available;
+	padding-left: 24px;
+
+	@media (max-width: $small) {
+		padding-left: 0;
+		margin-top: 20px;
+	}
+
+	&__container-top {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+
+		@media (max-width: $xsmall) {
+			flex-direction: column;
+		}
+	}
+
+	&__name {
+		font-size: 20px !important;
+	}
+
+	&__imagenes {
+		display: flex;
+
+		@media (max-width: $large) {
+			flex-direction: column;
+		}
+	}
+
+	&__imagen {
+		width: 250px;
+	}
+
+	&__habilidades {
+		margin-top: 10px;
+
+		.nes-container {
+			@media (max-width: $medium) {
+				padding: 1em;
+			}
+		}
+	}
+
+	&__habilidad {
+		margin-bottom: 20px;
+	}
+
+	&__habilidad-descripcion {
+		font-size: 15px;
+		color: gray;
+	}
+
+	.nes-progress {
+		height: 20px;
+		margin-bottom: 10px;
+	}
+}

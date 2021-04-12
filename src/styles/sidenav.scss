@@ -1,0 +1,29 @@
+.sidenav	 {
+
+	&__icon {
+		transform: scale(.6);
+	}
+
+	&__icon:before {
+		top: -56px;
+	}
+
+ &__item {
+	 margin-bottom: 20px;
+ }
+
+ &__buttons {
+	margin: auto;
+	width: max-content;
+ }
+
+ &__btn {
+	 width: -webkit-fill-available;
+ }
+
+ &.nes-container {
+	@media (max-width: $medium) {
+		padding: 1rem 1.5rem;
+	}
+ }
+}
